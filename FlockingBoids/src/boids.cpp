@@ -116,6 +116,9 @@ void Boid::setAttributesBasedOnType(std::string type)
 	gameSpeedRotationHold = rotationSpeedFactor;
 	gameSpeedMvmtHold = mvmtSpeedFactor;
 	gameSpeedAnimHold = animSpeedFactor;
+
+	//go ahead and set the size of the ruleHeading rectangle shape
+	ruleHeading.setSize(sf::Vector2f(-35,1));
 }
 //sets sprites texture and  rect (for the animation/image)
 void Boid::setSprite(sf::Texture& thatTexture)
@@ -136,7 +139,6 @@ void Boid::setSprite(sf::Texture& thatTexture)
 		rectSprite.height = 26;
 		rectSprite.width = 67;
 	}
-
 	rectSprite.left = 0;
 	rectSprite.top = 0;
 }
@@ -147,7 +149,7 @@ void Boid::setIsPredatorOnScreen(bool isPredOnScreen)
 }
 
 //--------------UPDATE BOID FUNCTIONS---------------
-void Boid::updateBoid(sf::RenderWindow& window, bool isPredOnScreen)
+void Boid::updateBoid(sf::RenderWindow& window, bool isPredOnScreen, bool drawHeading)
 {
 	//update each necasaary value and then draw the boid to the window
 	if (!isPredator)
@@ -156,10 +158,18 @@ void Boid::updateBoid(sf::RenderWindow& window, bool isPredOnScreen)
 		updatePredatorAnim();
 
 	setIsPredatorOnScreen(isPredOnScreen);
+
 	updateRotation();
 	updateDirection();
 	updateVelocity();
 	updatePosition();
+
+	if(drawHeading) //draw heading if the parameter passed is true
+	{
+		ruleHeading.setRotation(desiredRotation);
+		ruleHeading.setPosition(position);
+		window.draw(ruleHeading);
+	}
 
 	window.draw(sprite);
 }

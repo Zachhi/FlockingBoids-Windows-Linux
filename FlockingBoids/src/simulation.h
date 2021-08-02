@@ -40,6 +40,7 @@ private:
 	bool isControls = false; //tracks if we want to show controls or not
 	bool isWaterSound = false; //tracks if we want to play water stream sound or not
 	bool isPredatorOnScreen = false; //tracks if any predator is on screen. This is because I think it looks better when everyones rotation speed is a little higher when a predator is on screen
+	bool drawHeading = false; //tracks if we should draw the desired heading for each boid or not
 
 	float prevGameSpeed = 1.0; //helps control game speed so we can run at anywhere from [.25x, 2.00x] speed
 	float currGameSpeed = 1.0;
@@ -75,6 +76,7 @@ public:
 	void updateFps(); //to help update the fps every loop
 	void callRules(); //calls the rules for prey and predators (determines which direction, velocity, rotation, and position they should update to later on in updateBoids())
 	void updateGameSpeed(); //updates the game speed for all objects
+	void updateHeadings(); //updates the heading for each boid
 	void updateObjects(); //updates each boids position, direction, velocity, rotation, and animation. Then draws the boid to the window. Also updates and draws repulsions
 	void updateBoidCountText(); //update the display of boid counts
 	void updateGameSpeedText(); //update the display of game speed
