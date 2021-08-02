@@ -1,6 +1,6 @@
 # Flocking Boids
 
-Simple ray casting simulation that shows how rays of light would behave depending on its source location and the walls around it
+Simulates how fish flock and run from a predator in a closed enviroment
 
 **Note: This version requires Visual Studio. If you do not have access to Visual Studio, here is a version that works for linux and windows that requires no setup: https://github.com/Zachhi/RayCasting-Windows-Linux**
 
