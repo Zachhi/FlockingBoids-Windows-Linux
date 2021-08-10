@@ -16,7 +16,7 @@ The union of these three simple rules gives you incredible flocking behavior. Th
 
 Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été - Amélie" music tracks were performed myself.
 
-**Note: This version requires Visual Studio. If you do not have access to Visual Studio, here is a version that works for linux and windows that requires no setup: https://github.com/Zachhi/FlockingBoids-Windows-Linux**
+**Note: If you have access to Visual Studio, and would prefer that, it can be found here: https://github.com/Zachhi/RayCasting-VS**
 
 ## Demo
 
