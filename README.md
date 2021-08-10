@@ -54,12 +54,12 @@ Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été
 
 ### Dependencies
 
-* Windows
-* Visual Studio 19 or above
-* SFML (Simple and Fast Multi-Media Library) 2.5.1 or later is required in order to run this program. You can install SFML here: https://www.sfml-dev.org/download/sfml/2.5.1/
-* Since we are using Visual Studio, download the Visual c++ 15 from the sfml website
+* Windows or Linux
+* SFML (Simple and Fast Multi-Media Library) 2.5.1 or later. However, I have set everything up already for your convenience. You will not be required to download/link any libraries. The downside is that the download is ~30 MB more.
+* GCC 7.3.0 MinGW (32 bit) or later. If you want to use 64 bit version of GCC, download the SFML GCC 64-bit version from https://www.sfml-dev.org/download/sfml/2.5.1/ then simply replace the `include` and `lib` files in `sfmlFiles` with the `include` and `library` files you just downloaded. Then delete and replace the current .dlls with the .dll files in the `bin` folder you just downloaded.
+* GNU Make
 
-**If you don't have access to Visual Studio, or are on linux, scroll to the top to find the other version**
+**If you want to use Visual Studio, which would not require the use of a makefile (if you dont have GNU Make set up), scroll to the top to find the link**
 
 ### Installing and Executing
 
