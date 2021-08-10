@@ -63,19 +63,15 @@ Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été
 
 ### Installing and Executing
 
-* Download the source code from github, or clone the repository into Visual Studio
-* Import into Visual Studio
-* Build according to your need (x86 or x64)
-* In project settings
-  * Add the `/path/to/sfml/include` to your c++ include path
-  * Add the `/path/to/sfml/libray` to the linker library path
-  * Link the following sfml libraries: `sfml-graphics.lib, sfml-windows.lib, sfml-system.lib, sfml-audio.lib`
-  * Link the following debug libraries: `sfml-graphics-d.lib, sfml-windows-d.lib, sfml-system-d.lib, sfml-audio-d.lib`
-  * Copy the sfml dlls (in the `sfml/bin` folder) to your project folder
-* If that is too hard to follow, a simple 5 minute tutorial for linking SFML with a Visual Studio project can be found here: https://www.youtube.com/watch?v=YfMQyOw1zik
-* Click the run button at the top and the program should start
-
-**If you would prefer not having to link libraries, and would prefer a version fully set up, see the link at the top**
+**Windows or Linux:**
+* Download the source code from here, or copy the repository into your enviroment
+* Open your terminal
+* run the command `make` to build project
+* Now run the executable by running the command `run` or `run.exe` to start the program
+* If it does not work right away for you, there is two things you have to check:
+  * Go to your default compiler path or `C_Cpp.default.compilerpath` and make the path is set to `C:/MinGW/bin/g++.exe` or wherever your MinGW is located
+  * Go to your default include path or `C_Cpp.default.includepath` and make sure the path is set to `["${workspaceFolder}**/"]`
+  * Run `make` and `run` again and the program should execute
 
 ## Authors
 
