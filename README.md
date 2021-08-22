@@ -1,6 +1,9 @@
 # Flocking Boids
 This program simulates how fish behave (flock) in large groups, how they run from predators, avoid obstacles, borders, and more.
 
+# Demo
+
+# About
 A major part of this program was to make it look as clean as possible. I focused on having it look professionally done, and I put a lot of thought into the design of the simulation itself. There have been plenty of flocking boid programs done, and I wanted mine to pop out and look better than any others. If you search for flocking boid programs around the web, almost all of them look the same, with a select few that really blow you away. I think this simulation is worth a look at, so go ahead and scroll to the Demo section to watch the youtube video.
 
 The base idea comes from Craig Reynolds, who developed a model for flocking in 1986. More can be read here: https://www.red3d.com/cwr/boids/
@@ -47,8 +50,6 @@ Eventually, my plan is to make this into a screensaver people can download and u
 Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été - Amélie" music tracks were performed myself.
 
 **Note: If you have access to Visual Studio, and would prefer that version, it can be found here: https://github.com/Zachhi/FlockingBoids-VS**
-
-## Demo
 
 ## Controls
 
