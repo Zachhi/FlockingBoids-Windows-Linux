@@ -1,6 +1,8 @@
 # Flocking Boids
 This program simulates how fish behave (flock) in large groups, how they run from predators, avoid obstacles, borders, and more.
 
+**Note: If you have access to Visual Studio, and would prefer that version, it can be found here: https://github.com/Zachhi/FlockingBoids-VS**
+
 # Demo
 
 (Quality much worse here due to gif-conversion)
@@ -55,8 +57,6 @@ There are 3 different flocking types provided. The first can be thought of the n
 Eventually, my plan is to make this into a screensaver people can download and use.
 
 Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été - Amélie" music tracks were performed myself.
-
-**Note: If you have access to Visual Studio, and would prefer that version, it can be found here: https://github.com/Zachhi/FlockingBoids-VS**
 
 ## Controls
 
